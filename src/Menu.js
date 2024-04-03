@@ -1,23 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from './assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faRectangleXmark } from '@fortawesome/free-solid-svg-icons'
+import { BrowserRouter,  Routes,  Route} from "react-router-dom";
+import AboutUs from './components/AboutUs'
+import {Link} from 'react-router-dom'
+
 
 const Menu = () => {
+  const [icon,setIcon] = useState(false)
+  const handleClick = () => {
+    setIcon(!icon)
+  }
   return (
-    <div class='bg-slate-100 flex items-center'>
+   <section>
+    <div className='bg-slate-100 flex items-center '>
 
-       <div class=' basis-1/2 sm:basis-2/5'> <img src={logo} class='h-16 p-2 sm:w-32 sm:h-16 ml-6 sm:ml-28 xl:ml-52'></img></div>
-      <div class='basis-1/2 sm:hidden'> <span class='bg-[#039700] rounded-full px-2  py-1 ml-24 bg-slate-100'><FontAwesomeIcon icon={faBars} /></span> </div>
-      <div class='hidden sm:basis-3/5 sm:flex sm:text-xs sm:justify-evenly sm:items-center lg:ml-36 xl:ml-40'>
-        <a>Home</a>
-        <a>About Us</a>
-        <a>Promotions</a>
-        <a>Gallery</a>
-        <a>Services</a>
-        <a>Contact Us</a>
-       </div>
-    </div>
+       <div className=' basis-1/2 md:basis-2/5'> <img src={logo} className='absolute h-16 top-16 p-2 ml-6 sm:top-10 sm:left-10 md:static md:ml-28    xl:ml-52'></img></div>
+      
+     <div className='basis-1/2 md:hidden'> <div className='px-4 py-5 ml-24 sm:ml-52 md:hidden' onClick={handleClick} > 
+       {icon ? <span className=' bg-slate-100' ><FontAwesomeIcon icon={faRectangleXmark} size="lg" style={{color: "#039700",}} /> </span>: 
+       <span className='  bg-slate-100' > <FontAwesomeIcon icon={faBars} size="lg" style={{color: "#039700",}}/></span> }  
+        </div>
+        <div className= {icon ? 'inline text-right ' : 'hidden'}  >
+        <Link class='block pr-5 text-sm font-semibold hover:text-[#039700]' to='/'>Home</Link>
+        <Link class='block pr-5 text-sm font-semibold mt-2 hover:text-[#039700]' to='/about'>About Us</Link>
+        <Link class='block pr-5 text-sm font-semibold mt-2 hover:text-[#039700]' to='/promotions'>Promotions</Link>
+        <Link class='block pr-4 text-sm font-semibold mt-2 hover:text-[#039700]' to='/noncontract'>Non-Contract Services</Link>
+        <Link class='block pr-5 text-sm font-semibold mt-2' to='/servicespage'>Services</Link>
+        <Link class='block pr-5 text-sm font-semibold mt-2 pb-2 hover:text-[#039700]' to='/contactus'>Contact Us</Link>
+        </div>
+        </div>
+
+      <div className='hidden md:basis-3/5 md:flex md:text-xs md:justify-evenly md:items-center lg:ml-48  xl:ml-52'>
+        <Link class=' font-semibold hover:text-[#039700] active:text-[#039700] ' to='/'>Home</Link>
+        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/about'>About Us</Link>
+        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/promotions'>Promotions</Link>
+        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/noncontract'>Non-Contract Services</Link>
+        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/servicespage'>Services</Link>
+        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/contactus'>Contact Us</Link>
+        </div>
+        </div> 
+         </section>
+   
   )
 }
 

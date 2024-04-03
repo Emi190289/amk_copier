@@ -1,21 +1,34 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
+import noncontract from './assets/noncontract.jpg'
+import {useNavigate} from 'react-router-dom'
+// import Noncontractpage from './components/Noncontractpage'
+ 
 
 const Noncontract = () => {
+  const navigate =useNavigate()
+  const handleclick = ()=>{
+    navigate('/noncontract')
+  }
+
   return (
-    <section class='bg-slate-100 pb-8'>
-        <p class='text center'>Non Contract Services</p>
-        <div> <p>AMK Copier offers our customers several options for servicing and maintaining 
+    <section className='bg-slate-100 pb-8 p-4  lg:flex lg:mb-2'>
+       <div class=''><p className='text-3xl font-bold text-center pt-6'>Non Contract Services</p>
+        <div class='mt-6 '> <p>AMK Copier offers our customers several options for servicing and maintaining 
         their Canon and Xerox copiers. In some cases, you may prefer to employ our services on a per job basis.</p>
-        <p>Our Non-contract Services Include The Following:</p>
-        <ul>
-            <li>Preventive maintenance defined by your specific needs and requirements.</li>
-            <li>Professional Field Service Technicians and IT Support fully trained and equipped with the necessary tools to diagnose, repair and maintain your equipment.</li>
-            <li>Detailed Field Service Reports documenting the work performed within 48 hours.</li>
-            <li>We offer local coverage for those customers whose service contracts has expired or no longer under service maintenance. You can have the option of signing a service maintenance contract after we have serviced your equipment. We don’t employ subcontractors as we have our own technical team, retaining full accountability for quality of service.</li>
+        <p className='text-2xl font-bold  pt-8'>Our Non-contract Services Include The Following:</p>
+        <ul className='mt-4 text-left'>
+          <li class='flex mt-2'>   <FontAwesomeIcon icon={faCheckDouble} size="lg" style={{color: "#039700",}} />  <p class='ml-2'>Preventive maintenance defined by your specific needs and requirements.</p></li>
+          <li class='flex mt-2'>  <FontAwesomeIcon icon={faCheckDouble} size="lg" style={{color: "#039700",}} /> <p class='ml-2'>Professional Field Service Technicians and IT Support fully trained and equipped with the necessary tools to diagnose, repair and maintain your equipment.</p></li>
+            <li className=' flex mt-2'><FontAwesomeIcon icon={faCheckDouble} size="lg" style={{color: "#039700",}} /> <p class='ml-2'>Detailed Field Service Reports documenting the work performed within 48 hours.</p></li>
+            <li className='flex mt-2'><FontAwesomeIcon icon={faCheckDouble} size="lg" style={{color: "#039700",}} /> <p class='ml-2'>We offer local coverage for those customers whose service contracts has expired or no longer under service maintenance. You can have the option of signing a service maintenance contract after we have serviced your equipment. We don’t employ subcontractors as we have our own technical team, retaining full accountability for quality of service.</p></li>
         </ul>
-        <button>Read More</button></div>
-        <div>
-            <img></img>
+      <div class='mt-4 pl-6 '> 
+       <button class='bg-[#039700] border-2 px-4 py-2 rounded-md text-slate-100' onClick={handleclick}>Read More</button></div></div>
+      </div> 
+        <div class=' mt-6 lg:inline ' > 
+            <img src={noncontract} class=' '></img>
         </div>
     </section>
   )

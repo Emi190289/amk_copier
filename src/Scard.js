@@ -37,15 +37,17 @@ const Scard = () => {
            ])
   return (
     <>
-    <h2 class='text-3xl font-bold text-center pt-8'>Check Out Our Services</h2>
-        {data1.map((dataa)=>(
-            
-            <div class='text-center pt-10 flex-col items-center justify-center '>
+    <h2 className='text-3xl font-bold text-center pt-8'>Check Out Our Services</h2>
+    <div className='md:grid md:grid-cols-2 lg:grid lg:grid-cols-3'>
+        {data1.map((dataa)=> {
+            return(
+            <div className='text-center pt-10 flex-col items-center justify-center lg:mx-8'>
                 
-          <div class='flex justify-center'> <img class="w-12 h-12 " src={require(`./assets/${dataa.image1}.png`)}></img></div>
-            <p class='text-xl mb-2 '>{dataa.heading}</p>
+          <div className='flex justify-center'> <img className="w-12 h-12 " src={require(`./assets/${dataa.image1}.png`)}></img></div>
+            <p className='text-xl mb-2 '>{dataa.heading}</p>
            <p >{dataa.text}</p></div>
-))}
+)})}
+</div>
    </>
   )
 }

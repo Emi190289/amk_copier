@@ -3,7 +3,7 @@ import Scard from './Scard'
 
 const Services = () => {
   return (
-    <div class='bg-slate-100 pb-8 '><Scard/>
+    <div className='bg-slate-200 pb-8 '><Scard/>
 
     </div>
   )
