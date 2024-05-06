@@ -17,7 +17,7 @@ const Menu = () => {
    <section>
     <div className='bg-slate-100 flex items-center '>
 
-       <div className=' basis-1/2 md:basis-2/5'> <img src={logo} className='absolute h-16 top-16 p-2 ml-6 sm:top-10 sm:left-10 md:static md:ml-28    xl:ml-52'></img></div>
+       <div className=' basis-1/2 md:basis-2/5'> <img src={logo} className='absolute h-16 top-16 p-2 ml-6 sm:top-10 sm:left-10 md:static  md:h-20 lg:h-24 lg:ml-28   xl:ml-52'></img></div>
       
      <div className='basis-1/2 md:hidden'> <div className='px-4 py-5 ml-24 sm:ml-52 md:hidden' onClick={handleClick} > 
        {icon ? <span className=' bg-slate-100' ><FontAwesomeIcon icon={faRectangleXmark} size="lg" style={{color: "#039700",}} /> </span>: 

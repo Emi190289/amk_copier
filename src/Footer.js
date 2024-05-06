@@ -7,19 +7,25 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link, useNavigate } from 'react-router-dom'
+
 // import { faWhatsapp } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
+    const navigate = useNavigate()
+    const handleClick = () => {
+        navigate('/servicespage')
+    }
   return (
     <section className=''>
-        <div className='bg-[#039700] text-slate-200 sm:flex lg:mx-10 lg:-mt-8 xl:mx-36'>
-            <div className='p-4 text-center md:text-left md:pl-20 '>
+        <div className='bg-[#039700] text-slate-200 grid justify-items-center  md:grid-cols-2 lg:-mt-8 lg:mx-10  xl:mx-36'>
+            <div className=' my-2 md:text-left md:pl-20 '>
                 <p className='font-bold text-2xl'>Looking for a right copier?</p>
-            <p className='text-xs'>We help you to make the right choice</p></div>
-            <div className="pl-24 pb-4 sm:pt-5 md:pl-40"><button className='bg-slate-200 text-[#039700] p-2 px-4  text-sm'>Explore More   -> </button></div>
+            <p className='text-center text-xs'>We help you to make the right choice</p></div>
+            <div className="my-4 "><button className='bg-slate-200 text-[#039700] p-2 px-4  text-sm' onClick={handleClick}>Explore More   -> </button></div>
         </div>
         <div className='lg:flex lg:pl-20 xl:pl-36' >
-            <div className='text-slate-200 m-2 lg:basis-1/3'>
+            <div className='text-slate-200 m-2 lg:basis-1/3 ' data-aos="fade-down" data-aos-duration="3000">
                 <p className='font-bold text-xl  pt-4'>About Us</p>
             <p className='mt-4   text-sm leading-6 lg:leading-5 '>Versatile enough to successfully service Canon, HP, Konica Minolta, Xerox MFP and LaserJet brands. Adept at quickly diagnosing a problem discussing options with customers and performing reliable regular maintenance tasks. Specializes in old and new copier technology.</p>
            <div className='flex mt-2'>
@@ -28,17 +34,17 @@ const Footer = () => {
            <a href='https://www.linkedin.com/company/amk-copiers/' className='ml-2'> <i className='text-3xl  '><FaLinkedin /></i></a></div>
             </div>
         
-        <div className='text-slate-200 m-2 lg:basis-1/3'>
+        <div className='text-slate-200 m-2 lg:basis-1/3  ' data-aos="fade-down" data-aos-duration="2000">
             <p className='font-bold text-xl  pt-4'>Useful Links</p>
            <div className='  mt-3 text-sm leading-7'>
-             <a><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Home</a>
-            <a className='block'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> About Us</a>
-            <a className='block'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Promotions</a>
-            <a className='block'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Gallery</a>
-            <a className='block'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Services</a>
-            <a className='block'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Contact Us</a></div>
+             <Link to='/'> <FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Home</Link>
+            <Link className='block' to='/about'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}}  /> About Us</Link>
+            <Link className='block' to='/promotions' ><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}}/> Promotions</Link>
+            <Link className='block' to='/noncontract'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Non-Contract Services</Link>
+            <Link className='block' to='/servicespage'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Services</Link>
+            <Link className='block'  to='/contactus'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Contact Us</Link></div>
         </div>
-        <div className='text-slate-200  m-2 lg:basis-1/3'>
+        <div className='text-slate-200  m-2 lg:basis-1/3 ' data-aos="fade-down" data-aos-duration="1000">
             <p className='font-bold text-xl  pt-4'>Contact Us</p>
            <div className='mt-3'> 
             <FontAwesomeIcon icon={faLocationDot} size="lg" style={{color: "#039700",}} /> 
@@ -54,7 +60,7 @@ const Footer = () => {
             <p className='ml-7 '>Service@amkcopiers.ae</p></div>
             
         </div></div>
-        <div className='bg-slate-800 text-white text-center p-3'>© All rights reserved </div>
+        <div className='bg-slate-800 text-white text-center p-3' >© All rights reserved</div> 
     </section>
   )
 }
