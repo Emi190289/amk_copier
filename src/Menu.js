@@ -24,22 +24,22 @@ const Menu = () => {
        <span className='  bg-slate-100' > <FontAwesomeIcon icon={faBars} size="lg" style={{color: "#039700",}}/></span> }  
         </div>
         <div className= {icon ? 'inline text-right ' : 'hidden'}  >
-        <Link class='block pr-5 text-sm font-semibold hover:text-[#039700]' to='/'>Home</Link>
-        <Link class='block pr-5 text-sm font-semibold mt-2 hover:text-[#039700]' to='/about'>About Us</Link>
-        <Link class='block pr-5 text-sm font-semibold mt-2 hover:text-[#039700]' to='/promotions'>Promotions</Link>
-        <Link class='block pr-4 text-sm font-semibold mt-2 hover:text-[#039700]' to='/noncontract'>Non-Contract Services</Link>
-        <Link class='block pr-5 text-sm font-semibold mt-2' to='/servicespage'>Services</Link>
-        <Link class='block pr-5 text-sm font-semibold mt-2 pb-2 hover:text-[#039700]' to='/contactus'>Contact Us</Link>
+        <Link className='block pr-5 text-sm font-semibold hover:text-[#039700]' to='/'>Home</Link>
+        <Link className='block pr-5 text-sm font-semibold mt-2 hover:text-[#039700]' to='/about'>About Us</Link>
+        <Link className='block pr-5 text-sm font-semibold mt-2 hover:text-[#039700]' to='/promotions'>Promotions</Link>
+        <Link className='block pr-4 text-sm font-semibold mt-2 hover:text-[#039700]' to='/noncontract'>Non-Contract Services</Link>
+        <Link className='block pr-5 text-sm font-semibold mt-2' to='/servicespage'>Services</Link>
+        <Link className='block pr-5 text-sm font-semibold mt-2 pb-2 hover:text-[#039700]' to='/contactus'>Contact Us</Link>
         </div>
         </div>
 
       <div className='hidden md:basis-3/5 md:flex md:text-xs md:justify-evenly md:items-center lg:ml-48  xl:ml-52'>
-        <Link class=' font-semibold hover:text-[#039700] active:text-[#039700] ' to='/'>Home</Link>
-        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/about'>About Us</Link>
-        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/promotions'>Promotions</Link>
-        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/noncontract'>Non-Contract Services</Link>
-        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/servicespage'>Services</Link>
-        <Link class='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/contactus'>Contact Us</Link>
+        <Link className=' font-semibold hover:text-[#039700] active:text-[#039700] ' to='/'>Home</Link>
+        <Link className='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/about'>About Us</Link>
+        <Link className='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/promotions'>Promotions</Link>
+        <Link className='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/noncontract'>Non-Contract Services</Link>
+        <Link className='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/servicespage'>Services</Link>
+        <Link className='font-semibold hover:text-[#039700] active:text-[#039700] ' to='/contactus'>Contact Us</Link>
         </div>
         </div> 
          </section>
