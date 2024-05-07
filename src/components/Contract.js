@@ -3,7 +3,7 @@ import Header from '../Header'
 import Menu from '../Menu'
 import Footer from '../Footer'
 
-const Promotions = () => {
+const Contract = () => {
   return (
     <div>
       <Header/>
@@ -13,4 +13,4 @@ const Promotions = () => {
   )
 }
 
-export default Promotions
+export default Contract

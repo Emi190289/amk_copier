@@ -7,6 +7,7 @@ import Noncontract from '../Noncontract';
 import Services from '../Services';
 import contact_img1 from '../assets/contact_picture.jpg'
 import { useNavigate } from 'react-router-dom';
+// import { FaWhatsapp } from "react-icons/fa";
 
 const Home = () => {
   const navigate =useNavigate()
@@ -19,8 +20,11 @@ const Home = () => {
     <Header/>
     <Menu/>
     <About/>
+    {/* <div className=' '>
+      <a><FaWhatsapp className='text-white'/></a>
+    </div> */}
     <div className='bg-[#039700] text-slate-100 text-center p-10 '>
-          <p className='text-3xl font-bold  md:text-4xl' data-aos="fade-down" data-aos-duration="1000">WELCOME TO AMK COPIER FZ-LLC</p>
+          <p className='text-3xl font-bold  md:text-4xl' data-aos="fade-down" data-aos-duration="1000">WELCOME TO AMK COPIERS</p>
         <p className='text-base text-justify leading-8 md:py-6 lg:px-6 xl:px-16 font-medium mt-6  ' data-aos="fade-up" data-aos-duration="1500">Versatile enough to successfully service Canon, HP, Konica Minolta, Xerox MFP and LaserJet brands. Adept at quickly diagnosing a problem discussing options with customers and performing reliable regular maintenance tasks. Specializes in old and new copier technology.</p></div>
     <Services/>
     <Noncontract/>

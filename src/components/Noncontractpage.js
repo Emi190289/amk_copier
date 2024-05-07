@@ -5,7 +5,7 @@ import Footer from '../Footer'
 import noncontractpage from '../assets/noncontractpage.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
-import noncontractpage2 from '../assets/noncontractpage2.jpg'
+// import noncontractpage2 from '../assets/noncontractpage2.jpg'
 import noncontractpage1 from '../assets/noncontractpage1.jpg'
 
 const Noncontractpage = () => {
@@ -16,7 +16,7 @@ const Noncontractpage = () => {
       <div className=''>
         <img className='sm:w-full md:h-96 lg:h-[32rem] xl:h-[36rem]' src={noncontractpage}></img>
         <div className='bg-[#039700] text-slate-100 text-center p-8 '>
-        <p className='text-3xl font-bold  md:text-4xl' data-aos="fade-down" data-aos-duration="1000">WELCOME TO AMK COPIER FZ-LLC</p>
+        <p className='text-3xl font-bold  md:text-4xl' data-aos="fade-down" data-aos-duration="1000">WELCOME TO AMK COPIERS</p>
         <p className='text-base text-justify leading-8 md:py-6 lg:px-6 xl:px-16 font-medium mt-6'  data-aos="fade-up" data-aos-duration="1500" >Versatile enough to successfully service Canon, HP, Konica Minolta, Xerox MFP and LaserJet brands. Adept at quickly diagnosing a problem discussing options with customers and performing reliable regular maintenance tasks. Specializes in old and new copier technology.</p></div>
         </div>
     <section className=' bg-slate-100 lg:pb-10'> 

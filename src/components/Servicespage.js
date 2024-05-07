@@ -19,7 +19,7 @@ const Servicespage = () => {
       
       <img src={serviceparts} className='h-72 sm:w-full md:h-96 lg:h-[32rem] xl:h-[36rem]'></img>
       <div className='bg-[#039700] text-slate-100 text-center p-10 '>
-          <p className='text-3xl font-bold  md:text-4xl' data-aos="fade-down" data-aos-duration="1000">WELCOME TO AMK COPIER FZ-LLC</p>
+          <p className='text-3xl font-bold  md:text-4xl' data-aos="fade-down" data-aos-duration="1000">WELCOME TO AMK COPIERS</p>
         <p className='text-base text-justify leading-8 md:py-6 lg:px-6 xl:px-16 font-medium mt-6  ' data-aos="fade-up" data-aos-duration="1500">Versatile enough to successfully service Canon, HP, Konica Minolta, Xerox MFP and LaserJet brands. Adept at quickly diagnosing a problem discussing options with customers and performing reliable regular maintenance tasks. Specializes in old and new copier technology.</p></div>
       <div className='bg-slate-100'>
       <p className='text-center font-bold text-3xl lg:text-4xl p-12'data-aos="fade-down" data-aos-duration="1000">GALLERY OF SERVICE/PARTS</p>

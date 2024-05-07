@@ -8,10 +8,10 @@
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
-import Promotions from './components/Promotions';
 import Servicespage from './components/Servicespage';
 import ContactUs from './components/ContactUs'
 import Noncontractpage from './components/Noncontractpage';
+import Contract from './components/Contract';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} ></Route>
         <Route path='/about' element={<AboutUs />}></Route>
-        <Route path='/promotions' element={<Promotions />}></Route>
+        <Route path='/contract' element={<Contract />}></Route>
         <Route path='/noncontract' element={<Noncontractpage />}></Route>
         <Route path='/servicespage' element={<Servicespage />}></Route>
         <Route path='/contactus' element={<ContactUs />}></Route>
