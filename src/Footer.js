@@ -39,7 +39,7 @@ const Footer = () => {
            <div className='  mt-3 text-sm leading-7'>
              <Link to='/'> <FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Home</Link>
             <Link className='block' to='/about'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}}  /> About Us</Link>
-            <Link className='block' to='/contract' ><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}}/> Contract Services</Link>
+            {/* <Link className='block' to='/contract' ><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}}/> Contract Services</Link> */}
             <Link className='block' to='/noncontract'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Non-Contract Services</Link>
             <Link className='block' to='/servicespage'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Services/Parts</Link>
             <Link className='block'  to='/contactus'><FontAwesomeIcon icon={faTag} size="lg" style={{color: "#039700",}} /> Contact Us</Link></div>
